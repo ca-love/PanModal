@@ -263,6 +263,11 @@ public extension PanModalPresentationController {
         case .shortForm:
             snap(toYPosition: shortFormYPosition)
         case .longForm:
+            // WorkAround: Fix dynamic island device safearea becomes zero bug
+            if #available(iOS 16.0, *), presentable?.longFormHeight == .maxHeight {
+                presentedViewController.view.setNeedsLayout()
+            }
+
             snap(toYPosition: longFormYPosition)
         }
     }
