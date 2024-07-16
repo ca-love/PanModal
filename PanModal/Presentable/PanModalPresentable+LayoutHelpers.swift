@@ -12,7 +12,6 @@ import UIKit
  ⚠️ [Internal Only] ⚠️
  Helper extensions that handle layout in the PanModalPresentationController
  */
-@MainActor
 extension PanModalPresentable where Self: UIViewController {
 
     /**
