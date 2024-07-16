@@ -12,6 +12,7 @@ import UIKit
  Extends PanModalPresentable with helper methods
  when the conforming object is a UIViewController
  */
+@MainActor
 public extension PanModalPresentable where Self: UIViewController {
 
     typealias AnimationBlockType = () -> Void

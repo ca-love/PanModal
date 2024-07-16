@@ -22,6 +22,7 @@ import UIKit
  it's starting position through manipulating the shortFormHeight
  */
 
+@MainActor
 public class PanModalPresentationAnimator: NSObject {
 
     /**

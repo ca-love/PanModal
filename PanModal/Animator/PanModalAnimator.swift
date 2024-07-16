@@ -11,6 +11,7 @@ import UIKit
 /**
  Helper animation function to keep animations consistent.
  */
+@MainActor
 struct PanModalAnimator {
 
     /**
