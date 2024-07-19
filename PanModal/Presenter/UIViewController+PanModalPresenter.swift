@@ -11,6 +11,7 @@ import UIKit
 /**
  Extends the UIViewController to conform to the PanModalPresenter protocol
  */
+@MainActor
 extension UIViewController: PanModalPresenter {
 
     /**

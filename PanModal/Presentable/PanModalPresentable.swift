@@ -19,6 +19,7 @@ import UIKit
  }
  ```
  */
+@MainActor
 public protocol PanModalPresentable: AnyObject {
 
     /**

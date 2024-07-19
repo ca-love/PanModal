@@ -18,6 +18,7 @@ import UIKit
  viewController.transitioningDelegate = PanModalPresentationDelegate.default
  ```
  */
+@MainActor
 public class PanModalPresentationDelegate: NSObject {
 
     /**

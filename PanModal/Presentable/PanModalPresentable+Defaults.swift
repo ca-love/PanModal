@@ -11,6 +11,7 @@ import UIKit
 /**
  Default values for the PanModalPresentable.
  */
+@MainActor
 public extension PanModalPresentable where Self: UIViewController {
 
     var topOffset: CGFloat {

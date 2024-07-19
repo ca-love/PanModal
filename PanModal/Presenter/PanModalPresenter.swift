@@ -18,6 +18,7 @@ import UIKit
                                              sourceRect: .zero)
  ```
  */
+@MainActor
 protocol PanModalPresenter: AnyObject {
 
     /**
