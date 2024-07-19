@@ -710,8 +710,8 @@ private extension PanModalPresentationController {
      */
     func observe(scrollView: UIScrollView?) {
         scrollObserver?.invalidate()
-        scrollObserver = scrollView?.observe(\.contentOffset, options: .old) { scrollView, change in
-            Task { @MainActor [weak self]  in
+        scrollObserver = scrollView?.observe(\.contentOffset, options: .old) { [weak self] scrollView, change in
+            Task { @MainActor [weak self] in
                 /**
                  Incase we have a situation where we have two containerViews in the same presentation
                  */
